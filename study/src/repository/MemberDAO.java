@@ -64,7 +64,7 @@ public class MemberDAO {
 	public MemberDTO login(String userid, String userpw) {
 		
 		String sql = "select * from member where userid = ? and userpw = ?";
-		MemberDTO dto = new MemberDTO();;
+		MemberDTO dto = new MemberDTO();
 
 		try {
 			conn = DriverManager.getConnection(url, user, password);
